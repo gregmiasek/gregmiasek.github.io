@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULARZ ZAPISU</title>
+</head>
+
+<body>
+
+    <form action="https://formspree.io/your@email.com" method="post">
+        <h1>Poniższy formularz pozwoli Ci zapisać się na szkolenie.</h1>
+        <label for="name">IMIĘ</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="surname">NAZWISKO</label>
+        <input type="text" id="surname" name="surname"><br>
+        <label for="email">ADRES EMAIL</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="phone">NUMER TELEFONU</label>
+        <input type="tel" id="phone"><br>
+        <label for="city">MIASTO</label>
+        <select name="miasto" id="city">
+            <option value="1" >Gdańsk</option>
+            <option value="2" >Kraków</option>
+            <option value="3" >Warszawa</option>
+        </select><br>
+       <p>PŁEĆ <br>
+             <label for="man">MĘŻCZYZNA</label>
+            <input type="radio" id="man" value="male" name="gender">
+            <label for="woman">KOBIETA</label>
+            <input type="radio" id="woman" value="female" name="gender"><br>
+        </p>
+        <p>Klikając poniższe okienko wyrażasz zgodę na przetwarzanie swoich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922). <input type="checkbox" id="agreement" name="zgoda"> </p>
+        <textarea name="message" id="message"></textarea><br>
+        <input type="submit" value="Ninejszym przesyłam aplikację">
+    </form>
+
+</body>
+
+</html>
