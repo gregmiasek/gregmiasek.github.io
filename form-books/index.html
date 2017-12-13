@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULARZ KSIĄŻKI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="https://formspree.io/gmiasek@gmail.com" method="post" autocomplete="on">
+        <h1>A Simple Form</h1>
+        <h2>Form Fundaments</h2>
+        <fieldset>
+            <legend>Customer Info</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" autofocus placeholder="e.g. Janek Kos" required><br>
+            <label for="phone">Telephone</label>
+            <input type="tel" id="phone" pattern="\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{4}" title="0-000-000-0000" placeholder="pattern 1-234-567-8910" required><br>
+            <label for="email">Email address </label>
+            <input type="email" id="email" placeholder="e.g. satan666@hell.com" required multiple>
+        </fieldset>
+        <fieldset>
+            <legend>Books</legend>
+            <select name="title" id="title">
+                <option value="1">P. Watts "Ślepowidzenie"</option>
+                <option value="2">D. Yancey "Piąta Fala"</option>
+                <option value="3">D. Simmons "Terror"</option>
+                <option value="4">S. Lem "Niezwyciężony"</option>
+                <option value="5">A. Asimov "Roboty z planety świtu"</option>
+            </select>
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" min="1" max="5"><br>
+        </fieldset>
+        <input type="submit" value="Apply">
+
+    </form>
+</body>
+
+</html>
