@@ -22,13 +22,14 @@
         </fieldset>
         <fieldset>
             <legend>Books</legend>
-            <select name="title" id="title">
-                <option value="1">P. Watts "Ślepowidzenie"</option>
-                <option value="2">D. Yancey "Piąta Fala"</option>
-                <option value="3">D. Simmons "Terror"</option>
-                <option value="4">S. Lem "Niezwyciężony"</option>
-                <option value="5">A. Asimov "Roboty z planety świtu"</option>
-            </select>
+            <input type="text" list="Books" name="title">
+            <datalist id="Books">
+                <option value="P. Watts - Ślepowidzenie"></option>
+                <option value="D. Yancey - Piąta Fala"></option>
+                <option value="D. Simmons - Terror"></option>
+                <option value="S. Lem - Niezwyciężony"></option>
+                <option value="I. Asimov - Roboty z planety świtu"></option>
+                </datalist>
             <label for="quantity">Quantity</label>
             <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
         </fieldset>

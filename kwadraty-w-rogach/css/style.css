@@ -1,0 +1,37 @@
+#main {
+    background-color: green;
+    width: 400px;
+    height: 600px;
+    position: relative; 
+}
+
+#square1, #square2, #square3, #square4 {
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+    position: absolute;
+}
+
+#square1, #square2 {
+    right: 0px;
+}
+
+#square3, #square4, #circle2 {
+    left: 0px;
+}
+
+#square1, #square3, #circle2, #circle4 {
+    bottom: 0px;
+}
+
+#circle3, #circle4 {
+    right: 0px;
+}
+
+#circle1, #circle2, #circle3, #circle4 {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+}
