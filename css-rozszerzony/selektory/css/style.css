@@ -1,12 +1,8 @@
-div>:nth-child(even)
-{
-    color: pink;
-    background-color: red
-}
+div[typ="vip"]
+{color:red;}
 
-div>:nth-child(odd)
-{
-    color: yellow;
-    background-color: blue
-}
+div[detaliczny="tak"]
+{color:green;}
 
+div[detaliczny$="ozetak"]
+{color:yellow;}
