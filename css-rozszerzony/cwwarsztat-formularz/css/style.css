@@ -49,6 +49,8 @@ select:focus {
 form textarea {
     height: 120px;
     margin-top: 5px;
+    resize: none;
+
 }
 
 form input[type="radio"],
@@ -57,9 +59,19 @@ form label[for="man"] {
     display: inline;
 }
 
+#zgoda{float:left;
+line-height: 20px;}
+
+input[type="checkbox"]
+{float: left;
+margin: 5px 10px 0 0; }
+
 form input[type="submit"] {
     background-color: limegreen;
     padding: 10px 30px;
     color: white;
     text-transform: uppercase;
 }
+
+form input[type="submit"]:hover
+{background-color: blue;}
