@@ -1,0 +1,29 @@
+.p1 {
+    background: aqua;
+}
+
+.p2 {
+    background-color: aquamarine;
+}
+
+.linie .l-p1
+{background-color: green;
+}
+
+.linie .l-p2
+{background-color: bisque;
+}
+
+.linie .l-p1, .linie .l-p2 {display: inline;}
+
+.linie-bloki
+{
+    display:inline-block;
+    width: 100px;
+    height: 100px;
+background-color: aqua;
+margin:10px;
+border: 2px solid blue;
+font-size: 30px;}
+
+.znik{display:none;}
