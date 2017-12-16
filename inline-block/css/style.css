@@ -33,6 +33,6 @@
     display: none;
 }
 
-li .sp2:hover {
+li:hover .sp2 {
     display: none;
 }
