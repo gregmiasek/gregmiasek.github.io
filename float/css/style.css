@@ -1,0 +1,19 @@
+.port {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.port2 {
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+p{text-align: justify;}
+
+body>p:last-child {background-color: red }

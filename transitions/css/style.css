@@ -1,0 +1,12 @@
+#gb {
+    background-image: url("/image/ghost-busters.png");
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+#gb:hover {
+    background-image: url("/image/kotek.jpg");
+    display: block;
+    -webkit-transition: background-image 3s ease-in: 2s;
+}
