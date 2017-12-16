@@ -1,8 +1,16 @@
+/*selektor elementu z atrybutem o wartosci rownej*/
 div[typ="vip"]
 {color:red;}
 
-div[detaliczny="tak"]
+/*selektor elementu z atrybutem o wartosci zaczynajacej sie od*/
+div[detaliczny^="tak"]
 {color:green;}
 
+/*selektor elementu z atrybutem o wartosci konczcej sie na*/
 div[detaliczny$="ozetak"]
 {color:yellow;}
+
+.pass
+{height: 3em; }
+
+.pass[typ="tajne"]{height: 4em;}
