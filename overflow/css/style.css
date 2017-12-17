@@ -1,0 +1,14 @@
+.box {width: 600px;
+height: 100px;
+    margin: 80px;
+}
+
+p: {display: block;}
+
+#visible{overflow: visible;}
+
+#hidden{overflow:hidden}
+
+#scroll {overflow: scroll;}
+
+#auto {overflow: auto;}

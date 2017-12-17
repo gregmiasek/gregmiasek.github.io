@@ -1,0 +1,14 @@
+body {
+    color: white;
+    font-size: 2em;
+    font-weight: 150;
+}
+
+#tlo {
+    background-color: pink;
+    background-image: url('../image/ghost-busters.png');
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
