@@ -1,0 +1,29 @@
+body {
+    font-family: verdana;
+    margin: 0;
+}
+
+@media (max-width:992px) {
+    #dude-2 {
+        display: none;
+    }
+
+    @media (min-width:993px) and (max-width:1170px) {
+
+        #dude-1 {
+            display: none;
+        }
+    }
+
+
+
+    @media (min-width:1171px) {
+
+        #dude-1 {
+            display: none;
+        }
+        #dude-2 {
+            display: inline-block;
+            height: 100vh;
+        }
+    }
