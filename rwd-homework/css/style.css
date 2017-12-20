@@ -23,7 +23,7 @@ header {
     p {
         text-align: center;
         font-weight: 400;
-        font-size: 1.5em;
+        font-size: 3.5vw;
         position: absolute;
         top: 55%;
         left: 30%;
@@ -31,7 +31,7 @@ header {
 
 
     span {
-        font-size: 1em;
+        font-size: 3vw;
         font-weight: 700;
 
     }
