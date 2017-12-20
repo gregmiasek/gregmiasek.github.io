@@ -4,34 +4,31 @@ body {
 }
 
 p {
-    z-index: 10;
-    color: black;
     line-height: 1.5em;
 }
 
-img {
-    display: inline-block;
-    height: 100%;
+header {
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
 
 @media (max-width:992px) {
     header {
-        text-align: center;
-    }
-    #dude-1 {
-        display: block;
         height: 50vh;
+        text-align: center;
+        background-image: url(../img/man-1.jpg);
     }
-    #dude-2 {
-        display: none;
-    }
+
     p {
-        display: block;
         text-align: center;
         font-weight: 400;
         font-size: 1.5em;
+        position: absolute;
+        top: 55%;
+        left: 30%;
     }
+
 
     span {
         font-size: 1em;
@@ -42,46 +39,34 @@ img {
 
 @media (min-width:993px) and (max-width:1170px) {
     header {
+        height: 70vh;
         text-align: center;
-        position: relative;
-    }
-    #dude-1 {
-        display: none;
+        background-image: url(../img/man-2.jpg);
     }
 
-    #dude-2 {
-        display: inline-block;
-        position: relative;
-        height: 70vh;
-    }
     p {
         text-align: left;
-        display: inline-block;
         color: white;
         position: absolute;
         font-weight: 400;
-        font-size: 2.5vh;
+        font-size: 3.5vh;
         line-height: 6vh;
         top: 6vh;
-        right: 25vw;
+        right: 10vw;
 
     }
 
     span {
-        font-size: 3vh;
+        font-size: 5vh;
         font-weight: 700;
 
     }
 }
 
 @media (min-width:1171px) {
-    #dude-1 {
-        display: inline-block;
-        position: absolute;
+    header {
         height: 100vh;
-    }
-    #dude-2 {
-        display: none;
+        background-image: url(../img/man-1.jpg);
     }
     p {
         text-align: left;
