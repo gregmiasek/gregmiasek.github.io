@@ -49,7 +49,7 @@ header {
         color: white;
         position: absolute;
         font-weight: 400;
-        font-size: 3.5vh;
+        font-size: 3vh;
         line-height: 6vh;
         top: 6vh;
         right: 10vw;
@@ -57,7 +57,7 @@ header {
     }
 
     span {
-        font-size: 5vh;
+        font-size: 4vh;
         font-weight: 700;
 
     }
