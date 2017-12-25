@@ -1,0 +1,64 @@
+body {
+    font-family: fa-regular;
+    margin: 0;
+    background-color: #98fb98;
+}
+
+.item {
+    list-style-type: none
+    transition: after 3s;
+}
+
+.item:hover::after{content: "koszyk";
+    background-color: rgba(100,44,0,0,5);
+position: absolute;}
+
+
+
+
+
+#item-1 {
+    background-image: url(../img/product-1.jpg);
+}
+
+#item-2 {
+    background-image: url(../img/product-2.jpg);
+}
+
+#item-3 {
+    background-image: url(../img/product-3.jpg);
+}
+
+#item-4 {
+    background-image: url(../img/product-4.jpg);
+}
+
+@media (max-width: 480px){.item{width:80vw;
+    height:80vw;
+    display: inline-block;
+    position: relative;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin: 10px;}
+}
+
+@media (min-width: 481px) and @media(max-width:992){.item{width:45vw;
+    height:45vw;
+    display: inline-block;
+    position: relative;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin: 10px;}
+}
+
+@media (min-width: 993px){.item{width:20vw;
+    height:20vw;
+    display: inline-block;
+    position: relative;
+    background-position: center;
+    background-size:auto ;
+    background-repeat: no-repeat;
+    margin: 10px;}
+}

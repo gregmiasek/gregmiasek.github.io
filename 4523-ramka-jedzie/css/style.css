@@ -1,0 +1,29 @@
+#banner {
+    padding: 5px;
+    background-image: url(../img/4-jezioro.jpg);
+    background-position: center;
+    background-size: auto;
+    width: 60vw;
+    height: 30vh;
+    transition: border 2s;
+}
+
+#banner:hover {
+    border: 2px solid black;
+}
+
+#banner::after{
+    transition: content 5s;
+}
+
+#banner:hover::after {
+    content: "LAKE VIEW";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    font-size: 3vh;
+    height: 10%;
+    top: 45%;
+    text-align: center;
+    color: white;
+    display: block;
+}
