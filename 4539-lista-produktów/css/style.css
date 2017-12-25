@@ -1,20 +1,45 @@
 body {
-    font-family: fa-regular;
+    text-align: center;
     margin: 0;
     background-color: #98fb98;
 }
 
-.item {
-    list-style-type: none
-    transition: after 3s;
+
+i {
+    position: absolute;
+    display: inline-block;
+    top: 40%;
+    left: 40%;
+    width: 20%;
+    height: 20%;
 }
 
-.item:hover::after{content: "koszyk";
-    background-color: rgba(100,44,0,0,5);
-position: absolute;}
 
+.basket {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    background-color: rgba(100, 44, 0, 0);
+    transition: all 3s;
+    text-align: center;
+    position: relative;
+}
 
+.basket:hover {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 44, 0, 0.8);
+    position: relative;
+}
 
+.item {
+    list-style-type: none;
+}
 
 
 #item-1 {
@@ -33,32 +58,63 @@ position: absolute;}
     background-image: url(../img/product-4.jpg);
 }
 
-@media (max-width: 480px){.item{width:80vw;
-    height:80vw;
-    display: inline-block;
-    position: relative;
-    background-position: center;
-    background-size: auto;
-    background-repeat: no-repeat;
-    margin: 10px;}
+@media (max-width: 480px) {
+    .item {
+        width: 80vw;
+        height: 80vw;
+        display: inline-block;
+        position: relative;
+        background-position: center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        margin: 10px;
+    }
+
+    .basket {
+        font-size: 15vw;
+    }
+
 }
 
-@media (min-width: 481px) and @media(max-width:992){.item{width:45vw;
-    height:45vw;
-    display: inline-block;
-    position: relative;
-    background-position: center;
-    background-size: auto;
-    background-repeat: no-repeat;
-    margin: 10px;}
+
+@media (min-width:481px) and (max-width:992px) {
+    .item {
+        width: 40vw;
+        height: 40vw;
+        display: inline-block;
+        position: relative;
+        background-position: center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        margin: 10px;
+    }
+
+    .basket {
+        font-size: 8vw;
+    }
+
 }
 
-@media (min-width: 993px){.item{width:20vw;
-    height:20vw;
-    display: inline-block;
-    position: relative;
-    background-position: center;
-    background-size:auto ;
-    background-repeat: no-repeat;
-    margin: 10px;}
+@media (min-width: 993px) {
+    .item {
+        width: 20vw;
+        height: 20vw;
+        display: inline-block;
+        position: relative;
+        background-position: center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        margin: 10px;
+    }
+
+    .basket {
+        font-size: 4vw;
+    }
+
+}
+
+#buy-me {
+    font-size: 5em;
+    color: pink;
+    background-color: yellow;
 }
