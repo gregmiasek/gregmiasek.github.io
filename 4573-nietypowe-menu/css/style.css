@@ -1,0 +1,77 @@
+body {
+    text-align: center;
+    margin: 0;
+}
+
+
+#menu{text-align: center;}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menu-oprion {
+    position: relative; 
+    list-style-type: none;
+    width: 15 vw;
+}
+
+#navbar {
+    width: 100vw;
+    height: 90px;
+    padding-top: 10px;
+    position: relative;
+    background: blue;
+    color: white;
+    font-size: 3vw;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#navbar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid white;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+}
+
+
+section {
+    font-size: 4em;
+    font-weight: 400;
+}
+
+#link-1,
+#link-2,
+#link-3 {
+    float: left;
+}
+
+#link-4,
+#link-5,
+#link-6 {
+    float: right;
+}
+
+
+
+section {
+box-sizing: border-box;
+display: inline-block;
+position: relative;
+width: 400px;
+height: 200px;
+border-left: 200px solid black;
+border-right: 200px solid black;
+border-bottom:  100px solid black;}
