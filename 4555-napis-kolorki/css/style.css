@@ -1,15 +1,37 @@
 div {
     display: flex;
     align-items: center;
-    width: 300px;
-    height: 150px;
+    width: 600px;
+    height: 300px;
     background-color: crimson;
 
 }
 
-h1 {
-    font-size: 20px;
+
+p {
+    font-size: 40px;
     width: 100%;
     text-align: center;
-    color: white;
+    background-image: -webkit-linear-gradient(360deg, white,crimson,white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation-name: shine;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-size: 300%;
+}
+
+@keyframes shine {
+    0% {
+        background-position: right;
+
+    }
+    50% {
+        background-position: center
+    }
+   
+100%{
+        background-position: left;
+    }
 }
