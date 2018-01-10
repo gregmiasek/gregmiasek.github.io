@@ -8,7 +8,7 @@ body {
     width: 600px;
     height: 400px;
     background-image: url(../img/4-jezioro.jpg);
-    background-position:center; 
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 586px 386px;
     font-size: 0;
@@ -23,43 +23,51 @@ body {
 .sub:before {
     content: "";
     position: absolute;
+    box-sizing: border-box;
+    border-top: 0px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    width: 600px;
+    height: 0;
     top: 0;
     right: 0;
     height: 0;
-    transition: height 5s ease;
+    transition: border-width 5s, height 5s ease;
 
 }
 
 .sub:hover:before {
     content: "";
     position: absolute;
-    box-sizing: border-box;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
     width: 600px;
     height: 200px;
+    border-top: 2px solid black;
 }
 
 .sub:after {
     content: "";
     position: absolute;
-    bottom: 0;
-    right:0;
+    box-sizing: border-box;
+    border-bottom: 0px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    width: 600px;
     height: 0;
-    transition: height 5s ease;
+    bottom: 0;
+    right: 0;
+    height: 0;
+    transition: border-width 5s, height 5s ease;
 }
 
 .sub:hover:after {
     content: "";
+    visibility: visible;
     position: absolute;
     box-sizing: border-box;
+    border-bottom: 2px solid black;
     bottom: 0;
     right: 0;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    width:  600px;
+    width: 600px;
     height: 200px;
 }
 
