@@ -1,0 +1,14 @@
+a {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    background-color: aqua;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    line-height: 60px;
+}
+
