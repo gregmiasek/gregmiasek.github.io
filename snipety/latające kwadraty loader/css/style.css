@@ -21,6 +21,8 @@
     width: 50px;
     height: 50px;
     background-color: red;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 #white1 {
@@ -28,8 +30,6 @@
     top: 0;
     left: 0;
     animation-name: pulse1;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
 }
 
 
@@ -67,8 +67,6 @@
     right: 0;
     bottom: 0;
     animation-name: pulse2;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
 }
 
 @keyframes pulse2 {
