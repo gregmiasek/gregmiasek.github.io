@@ -1,0 +1,33 @@
+#main {
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.square {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: all 5s ease;
+}
+
+#sq-1 {
+    background-color: orange;
+    backface-visibility: hidden;
+    z-index: 10;
+}
+
+#sq-2 {
+    background-color: blue;
+    transform: rotateY(180deg)
+}
+
+
+#main:hover > #sq-1 {
+    transform: rotateY(180deg);
+}
+
+#main:hover > #sq-2 {
+    transform: rotateY(0deg);
+}

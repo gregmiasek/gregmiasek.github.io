@@ -2,7 +2,7 @@ input {
     display: none;
 }
 
-label:before {
+label::before {
     content: "red";
     color: rgba(1,1,1,0);
     text-align: center;
@@ -15,7 +15,7 @@ label:before {
     margin-right: 20px;
 }
 
-input:checked + label:before{
+input:checked + label::before{
     content: "YEAH";
     color: red;
 }
