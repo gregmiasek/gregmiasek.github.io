@@ -1,0 +1,12 @@
+a {
+    display: block;
+    text-decoration: none;
+}
+
+[href*="doc"] {
+    color: green;
+}
+
+[href*="docx"] {
+    color: pink;
+}
