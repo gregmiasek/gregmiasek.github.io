@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    position: absolute;
+    right: 5vw;
+    top: 2vh;
+
+}
+
+.nav-link {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1em;
+}
+
+.nav-link:hover {
+    background-color: darkblue;
+}
+
+header {
+    background-color: darkviolet;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+#header-text {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 40px;
+    font-size: 1.5em;
+}
+
+#hire-us {
+    background-color: orange;
+    padding: 10px 20px;
+}
+
+section {
+    width: 100%;
+}
+
+#team {
+    background-color: powderblue;
+}
+
+.cat-face {
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.crew-member {
+    display: inline-block;
+    width: 33%;
+}
+
+#opinions {
+    background-color: firebrick;
+}
+
+#contact {
+    background-color: blue;
+}
+
+footer {
+    background-color: darkblue;
+    width: 100%;
+}
+
+.social-media {
+    margin: 10px 20px;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 55px;
+}
+
+.social-media:hover {
+    color: aquamarine;
+}
