@@ -88,10 +88,22 @@ section {
     background-color: blue;
 }
 
+#contact form input, textarea {
+    border: none;
+    background-color: darkslateblue;
+}
+
 footer {
     background-color: darkblue;
     width: 100%;
 }
+
+textarea {
+    width: 60%;
+    height: 120px;
+    resize: vertical;}
+
+
 
 .social-media {
     margin: 10px 20px;

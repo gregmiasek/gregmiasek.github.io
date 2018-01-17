@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+}
+
+#main {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+
+#loader {
+    position: absolute;
+    width: 20vh;
+    height: 20vh;
+    animation-name: ride;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes ride {
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+    25% {
+        top: 0%;
+        left: 80%;
+    }
+    50% {
+        top: 80%;
+        left: 80%;
+    }
+    75% {
+        top: 80%;
+        left: 0%;
+    }
+
+    100% {
+        top: 0%;
+        left: 0%;
+    }
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    border-radius: 50%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#round1 {
+    width: 18vh;
+    height: 18vh;
+    border-top: 1vh solid red;
+    border-bottom: 1vh solid red;
+    border-left: 1vh solid red;
+    border-right: 1vh solid rgba(1, 1, 1, 0);
+    animation-name: turn1;
+    animation-duration: 2s;
+
+}
+
+@keyframes turn1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#round2 {
+    width: 14vh;
+    height: 14vh;
+    border-top: 1vh solid black;
+    border-bottom: 1vh solid black;
+    border-left: 1vh solid black;
+    border-right: 1vh solid rgba(1, 1, 1, 0);
+    animation-name: turn2;
+    animation-duration: 1.5s;
+}
+
+@keyframes turn2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    25% {
+        transform: rotate(270deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#round3 {
+    width: 10vh;
+    height: 10vh;
+    border-top: 1vh solid green;
+    border-bottom: 1vh solid green;
+    border-left: 1vh solid green;
+    border-right: 1vh solid rgba(1, 1, 1, 0);
+    animation-name: turn1;
+    animation-duration: 1s;
+}
+
+
+}
