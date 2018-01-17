@@ -64,47 +64,8 @@ section {
     width: 100%;
 }
 
-h2 {
-    font-size: 2em;
-    text-align: center;
-    font-weight: 800;
-    margin-bottom: 10px;
-}
-
-h2::after {
-    content"KOTEUSZE";
-    display: inline;
-    width: 10%;
-    height: 7px;
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-h3 {
-    font-size: 1.5em;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-h4 {
-    font-size: 1em;
-    font-weight: 500;
-    color: white;
-    margin-bottom: 5px;
-}
-
-h5 {
-    font-size: 0.9em;
-    font-weight: 500;
-    color: orange;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-
 #team {
-    background-color: aliceblue;
+    background-color: powderblue;
 }
 
 .cat-face {
@@ -114,99 +75,39 @@ h5 {
     border-radius: 50%;
 }
 
-.social-link {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    color: white;
-    background-color: gray;
-    border: 1px solid gray;
-    border-radius: 50%;
-    font-size: 12px;
-    text-align: center;
-    line-height: 20px;
-    margin: 7px;
-}
-
 .crew-member {
     display: inline-block;
     width: 33%;
-    padding: 50px;
-    box-sizing: border-box;
-    color: gray;
 }
-
-.crew-member h4 {
-    color: black;
-}
-
-.crew-member h5 {
-    color: cadetblue;
-}
-
-#skills {padding-bottom: 60px;}
 
 #opinions {
     background-color: firebrick;
-    padding-bottom: 60px;
 }
 
-.fan-op {
-    width: 40%;
-    padding: 40px;
-    display: inline-block;
-    box-sizing: border-box;
-    text-align: left;
-    height: 150px;
-}
-
-.fan-face {
-    width: 148px;
-    height: 148px;
-    border: 1px solid gray;
-    border-radius: 50%;
-}
-
-.fan-op-text {
-    width: 20vw;
-    height: 150px;
-    margin-left: 10px;
-    display: inline-block;
-}
+.fan-face {width: 120px;
+height: 120px;
+border: 1px solid gray;
+border-radius: 50%;}
 
 #contact {
     background-color: blue;
-    padding-bottom: 40px;
 }
 
-#contact form input,
-textarea {
+#contact form input, textarea {
     border: none;
     background-color: darkslateblue;
-    color: white;
-}
-
-input[type=text] {width: 48%;
-margin-right: 3%;
-    height: 40px;}
-
-input[type=email]  {width: 48%;
-line-height: 40px;}
-
-form {padding: 0 20%;}
-textarea {
-    width: 100%;
-    height: 120px;
-    resize: vertical;
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 10px;
 }
 
 footer {
     background-color: darkblue;
     width: 100%;
 }
+
+textarea {
+    width: 60%;
+    height: 120px;
+    resize: vertical;}
+
 
 
 .social-media {
