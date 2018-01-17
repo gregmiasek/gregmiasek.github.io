@@ -84,6 +84,11 @@ section {
     background-color: firebrick;
 }
 
+.fan-face {width: 120px;
+height: 120px;
+border: 1px solid gray;
+border-radius: 50%;}
+
 #contact {
     background-color: blue;
 }
