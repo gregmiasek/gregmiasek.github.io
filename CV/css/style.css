@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 3vw;
+}
+
+ul {
+    padding: 0;
+    text-align: center;
+}
+
+#main {
+    padding: 0 5vw;
+    position: relative;
+    display: flex;
+}
+
+#menu {
+    display: inline-block;
+    position: absolute;
+    text-align: right;
+    background-color: yellow;
+    right: 0;
+    margin-right: 5vw;
+}
+
+#menu > ul > li {
+    display: inline;
+    margin: 0;
+}
+
+#menu > ul > li > a {
+    text-decoration: none;
+    font-weight: 900;
+    padding: 5px 20px;
+    background-color: white;
+    color: black;
+    margin-right: 20px;
+}
+
+#eng, #pl {
+    background-size: cover;
+    background-position: center;
+}
+
+#eng {
+    background-image: url(../img/gb.png);
+}
+
+#pl {
+    background-image: url(../img/pl.jpg);
+   
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    width: 100%;
+    height: 15%;
+    background-color: yellow;
+    padding: 5vw 0;
+
+}
+
+#inheader {
+    margin-left: 2vw;
+    display: inline-block;
+    width: 61vw;
+    font-size: 2.5vw;
+}
+
+#pic {
+    background-image: url(../img/GregMiasek.jpg);
+    border: 2px solid black;
+    border-radius: 2%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 25vw;
+    width: 20vw;
+    display: inline-block;
+    margin-left: 5vw;
+}
+
+#me {
+    text-align: justify;
+}
+
+#about,
+#calendar {
+    display: inline-block;
+    padding: 1vw;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3vw;
+}
+
+span {
+    text-align: left;
+    font-weight: 900;
+}
+
+
+#about {
+    width: 25vw;
+    background-color: beige;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vw;
+
+}
+
+
+#calendar {
+    width: 55vw;
+    text-align: justify;
+
+}
+
+#calendar > section > ul > li {
+    display: flex;
+}
+
+#calendar > section > ul {
+    text-align: justify;
+}
+
+
+li {
+    font-size: 2vw;
+}
+
+.data,
+.opis {
+    display: inline-block;
+}
+
+#exp > ul,
+#edu > ul,
+#hobby > ul {
+    margin-left: 2vw;
+}
+
+#hobby {display: inline-block;}
+
+#hobby > ul > li {
+    margin-bottom: 10px;
+}
+
+#hobby > ul > {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.data {
+    width: 40%;
+    margin-right: 10px;
+    height: 100%;
+}
+
+
+
+.opis {
+    width: 55%;
+    position: relative;
+    left: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 40px 5%;
+    background-color: yellow;
+}

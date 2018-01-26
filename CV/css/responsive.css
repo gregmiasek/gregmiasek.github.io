@@ -1,0 +1,63 @@
+@media only screen and (min-width: 768px) {
+    body {
+        line-height: 2vw;
+    }
+
+    #main {
+        padding: 0 15vw;
+    }
+
+    #inheader {
+        width: 68vw;
+    }
+
+    h1 {
+        font-size: 3vw;
+        margin-right: 15vw;
+    }
+
+    #me {
+        font-size: 1.8vw;
+        margin-right: 15vw;
+    }
+
+    #pic {
+        height: 15vw;
+        width: 12vw;
+        margin-left: 15vw;
+    }
+
+    h2 {
+        font-size: 1.5vw;
+    }
+
+    li {
+        font-size: 1.3vw;
+        margin-bottom:
+    }
+
+    footer {
+        font-size: 1vw;
+    }
+
+    #hobby {
+        display: block;
+    }
+
+    #hobby > ul > li {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    #hobby > ul > {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    footer {
+        padding: 2vw 15vw;
+    }
+
+
+
+}
