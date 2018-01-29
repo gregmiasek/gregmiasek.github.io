@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#menu {
+    position: absolute;
+    width: 300px;
+    top: 50px;
+    left: -300px;
+    background-color: yellow;
+    transition: all 0.4s;
+}
+
+a{text-decoration: none;}
+
+#menu ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.active #menu{
+    left:0;
+}

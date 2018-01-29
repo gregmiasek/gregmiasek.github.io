@@ -1,0 +1,30 @@
+body {
+    height: 2000px;
+    margin: 0;
+}
+
+
+nav {
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    display: block;
+    height: 50px;
+    width: 100%;
+}
+
+ul {
+    text-align: right;
+}
+
+li {
+    display: inline-block;
+}
+
+ul,
+li {
+    margin: 0;
+}
+
+.backsee {
+    background-color: rgba(243, 132, 456, 1);
+}
