@@ -13,13 +13,17 @@ ul {
     padding: 0 5vw;
     position: relative;
     display: flex;
+    text-align: center;
+    background-image: linear-gradient(30deg, white, gray, darkgray, gray, white);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
 }
 
 #menu {
     display: inline-block;
     position: absolute;
     text-align: right;
-    background-color: yellow;
     right: 0;
     margin-right: 5vw;
 }
@@ -38,7 +42,8 @@ ul {
     margin-right: 20px;
 }
 
-#eng, #pl {
+#eng,
+#pl {
     background-size: cover;
     background-position: center;
 }
@@ -49,7 +54,7 @@ ul {
 
 #pl {
     background-image: url(../img/pl.jpg);
-   
+
 }
 
 li {
@@ -59,8 +64,11 @@ li {
 header {
     width: 100%;
     height: 15%;
-    background-color: yellow;
+    background-color: coral;
+    color: black;
     padding: 5vw 0;
+    z-index: 5;
+
 
 }
 
@@ -82,7 +90,13 @@ header {
     width: 20vw;
     display: inline-block;
     margin-left: 5vw;
+    transition: 0.5s ease;
+    transform-origin: left top;
+
 }
+
+
+
 
 #me {
     text-align: justify;
@@ -93,15 +107,21 @@ header {
     display: inline-block;
     padding: 1vw;
     position: relative;
+    background-color: white;
 }
 
 h1 {
     text-align: center;
+    margin-top: 0;
 }
 
 h2 {
     text-align: center;
     font-size: 3vw;
+}
+
+h3 {
+    font-size: 1.5vw;
 }
 
 span {
@@ -112,7 +132,7 @@ span {
 
 #about {
     width: 25vw;
-    background-color: beige;
+    background-color: skyblue;
     padding-left: 2vw;
     padding-right: 2vw;
     padding-top: 1vw;
@@ -123,6 +143,7 @@ span {
 #calendar {
     width: 55vw;
     text-align: justify;
+    padding-right: 3vw;
 
 }
 
@@ -150,8 +171,6 @@ li {
     margin-left: 2vw;
 }
 
-#hobby {display: inline-block;}
-
 #hobby > ul > li {
     margin-bottom: 10px;
 }
@@ -160,6 +179,14 @@ li {
     display: inline-block;
     margin-bottom: 10px;
     text-align: center;
+}
+
+
+.hobbytext {
+    display: inline;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .data {
@@ -176,9 +203,37 @@ li {
     left: 10px;
 }
 
+#contact {
+    width: 90wv;
+    margin: 0 5vw;
+    padding: 2vw 10vw;
+    font-size: 1vw;
+    text-align: center;
+}
+
+#contact input {
+    width: 40vw;
+    height: 4vw;
+    font-size: 1.5vw;
+    background-color: beige;
+    color: black;
+}
+
+textarea {
+    width: 70vw;
+    height: 10vw;
+    background-color: beige;
+    resize: vertical;
+    font-size: 1.5vw;
+}
+
+#contact #apply {
+    width: 10vw;
+}
+
 footer {
     text-align: center;
     font-size: 1.5vw;
     padding: 40px 5%;
-    background-color: yellow;
+    background-color: coral;
 }
