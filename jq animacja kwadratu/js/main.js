@@ -12,7 +12,7 @@ $(document).ready(function () {
 
             function tlo() {
                 $('div').animate({
-                   backgroundColor: "rgb( 20, 20, 20 )"
+                   backgroundColor: 'blue'
                 }, 5000)
             }
 
