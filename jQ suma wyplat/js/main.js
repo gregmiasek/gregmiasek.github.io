@@ -3,28 +3,16 @@ $(document).ready(function () {
 
 
     $('#count-sum').click(function () {
-            var allSums = $('.salary');
-            console.log(allSums);
+        var allSums = $('.salary');
+        console.log(allSums);
 
-            var kwoty = [];
+        var suma = 0;
 
-            for (var i = 0; i < allSums.length; i++) {
-                kwoty.push(parseInt(allSums[i].innerHTML));
-            }
-
-            console.log(kwoty);
-
-            var suma = 0;
-            for (var i = 0; i < kwoty.length; i++) {
-                suma += kwoty[i] << 0;
-
-
-            }
-
-            console.log(suma);
-            $('#sum').html(suma);
+        for (var i = 0; i < allSums.length; i++) {
+            suma += (parseInt(allSums[i].innerHTML));
         }
 
-    )
-
+        console.log(suma);
+        $('#sum').html(suma);
+    })
 });
