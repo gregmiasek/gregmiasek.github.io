@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 1400px;
+    font-family: 'Audiowide', cursive;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 20px;
+    z-index: 40;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    border: 3px solid #40d413;
+    background-color: #111;
+    list-style-type: none;
+    height: 40px;
+    transform: skew(-35deg);
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    transition: all .2s linear;
+
+}
+
+nav ul li:hover {
+    transform: scale(1.2) skew(-35deg);
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.7em;
+    line-height: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: block;
+    text-align: center;
+}
+
+.navdiv {
+    transform: skew(35deg);
+}
+
+#moi {
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/GregMiasek.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 100px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+header {
+    width: 100%;
+    background-color: #111;
+    color: #111;
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+    background-image: url(../img/digital%20green.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+    font-weight: 700;
+}
