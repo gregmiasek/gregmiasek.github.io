@@ -1,16 +1,21 @@
 @media (max-width: 720px) {
 
     nav {
-    right: auto;
-    left: -10px;
-    top: 90px;
-}
-    
-    
-    
-    
+        right: auto;
+        left: -10px;
+        top: 90px;
+    }
+
+    header {
+        text-align: right;
+    }
+
+
+
     nav ul li {
         display: block;
 
     }
+    
+    #moi {margin-right: 15px;}
 }
