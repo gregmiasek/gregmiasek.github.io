@@ -26,6 +26,10 @@
         width: 45%;
     }
 
+    .inner-section {
+        width: 600px;
+    }
+
 }
 
 
@@ -35,14 +39,6 @@
     }
 
 }
-
-@media (min-width: 640px) {
-    .inner-section {
-        width: 600px;
-    }
-
-}
-
 
 @media (min-width: 720px) {
 

@@ -122,7 +122,7 @@ h3 {
 
 h4 {
     margin-top: 15px;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 
@@ -280,6 +280,7 @@ textarea {
     margin-bottom: 20px;
     border: 2px solid #13d4cd;
     font-size: 1.5em;
+    font-family: 'Audiowide', cursive;
     background-color: #111;
     color: #fff;
 }
@@ -297,7 +298,7 @@ input {
     font-family: 'Audiowide', cursive;
     font-size: 1em;
     font-weight: 400;
-    color: #cbc5c5;
+    color: rgba(167, 155, 155, 0.65);
 }
 
 #apply {
