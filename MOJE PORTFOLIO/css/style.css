@@ -24,7 +24,7 @@ nav ul li {
     list-style-type: none;
     height: 40px;
     transform: skew(-35deg);
-    width: 130px;
+    width: 180px;
     display: inline-block;
     text-align: center;
     transition: all .3s linear;
