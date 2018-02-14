@@ -5,7 +5,8 @@ var beep = document.getElementById('beep');
 var muteIc = document.getElementById('volume-icon');
 var amient = document.getElementById('ambient');
 var tune = document.getElementById('tune');
-
+var innerSection = document.getElementsByClassName('inner-section');
+console.log(innerSection);
 
 for (var i = 0; i < navListItem.length; i++) {
     navListItem[i].addEventListener('mouseenter', function () {
@@ -38,7 +39,7 @@ var sliderBar = document.getElementById('slider-bar');
 var sliderList = document.getElementsByClassName('slider-content');
 console.log(sliderList);
 var sliderCount = sliderList.length;
-var sliderSpan = sliderCount * 500;
+var sliderSpan = sliderCount * 700;
 sliderBar.style.width = sliderSpan + 'px';
 var sliderIcons = document.getElementsByClassName('icon');
 console.log(sliderIcons);
@@ -46,12 +47,15 @@ console.log(sliderIcons);
 
 slideRigth.addEventListener('click', function () {
     console.log('prawo');
+
+    var innerWidth = innerSection[1].clientWidth;
+    console.log(innerWidth);
     var sliderPositon = sliderBar.offsetLeft;
 
-    if (sliderPositon != -sliderSpan + 500)
+    if (sliderPositon != -sliderSpan + 700)
 
     {
-        sliderBar.style.left = sliderPositon - 500 + 'px';
+        sliderBar.style.left = sliderPositon - 700 + 'px';
         sliderIcons[1].classList.add('fa-chevron-right');
         sliderIcons[0].classList.add('fa-chevron-left');
         sliderIcons[0].classList.remove('fa-times');
@@ -73,7 +77,7 @@ slideLeft.addEventListener('click', function () {
     if (sliderPositon !== 0)
 
     {
-        sliderBar.style.left = sliderPositon + 500 + 'px';
+        sliderBar.style.left = sliderPositon + 700 + 'px';
         sliderIcons[0].classList.add('fa-chevron-left');
         sliderIcons[1].classList.add('fa-chevron-right');
         sliderIcons[0].classList.remove('fa-times');

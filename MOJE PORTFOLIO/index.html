@@ -22,17 +22,12 @@
         <ul>
             <li class="navli">
                 <div class="navdiv">
-                    <a class="navlink" href="">o mnie</a>
+                    <a class="navlink" href="#about">o mnie</a>
                 </div>
             </li>
             <li class="navli">
                 <div class="navdiv">
-                    <a class="navlink" href="">umiejętności</a>
-                </div>
-            </li>
-            <li class="navli">
-                <div class="navdiv">
-                    <a class="navlink" href="">portfolio</a>
+                    <a class="navlink" href="#skills">umiejętności</a>
                 </div>
             </li>
             <li class="navli">
@@ -44,57 +39,68 @@
     </nav>
     <header>
         <div id="moi"></div>
-        <h1>Grzegorz Miąsek</h1>
-        <h2>front end developer</h2>
+        <div class="inner-section">
+            <h1>Grzegorz Miąsek</h1>
+            <h2>front end developer</h2>
+        </div>
     </header>
     <section id=about>
-        <div id="slider">
-            <div class="slider-btn" id="left"><i class="fas fa-chevron-left icon"></i>
+        <div class="inner-section">
+            <h3>o mnie</h3>
+            <p>Jako człowiek posiadający doświadczenie w DTP, zaczynam moją przygodę z web designem. Front-end jest naturalnym rozwinięciem tego, co robiłem dotychczas w analogowym świecie. Jest zarazem kompletnie nowym obszarem, którego eksploarcja przynosi mi radość. Bo co może być ciekawszego dla nerda z poniższymi zainteresowaniami?</p>
+            <div id="slider">
+                <div class="slider-btn" id="left"><i class="fas fa-chevron-left icon"></i>
 
-            </div>
-            <div class="slider-btn" id="right"><i class="fas fa-chevron-right icon"></i>
+                </div>
+                <div class="slider-btn" id="right"><i class="fas fa-chevron-right icon"></i>
 
-            </div>
-            <div id="slider-bar" style="left: 0px">
-                <div class="slider-content" id="pic-1">Science Fiction</div>
-                <div class="slider-content" id="pic-2">Gry Video</div>
-                <div class="slider-content" id="pic-3">Polityka</div>
+                </div>
+                <div id="slider-bar" style="left: 0px">
+                    <div class="slider-content" id="pic-1">Science Fiction</div>
+                    <div class="slider-content" id="pic-2">Gry Video</div>
+                    <div class="slider-content" id="pic-3">Polityka</div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="skills">
-        <h3>umiejętności</h3>
-        <div class="skill-icons">
-            <div class="skill">
-                <i class="fab fa-html5"></i>
+        <div class="inner-section">
+            <h3>umiejętności</h3>
+            <div id="skill-icons">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <h4>html5</h4>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <h4>css3</h4>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js"></i>
+                    <h4>java script</h4>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-desktop"></i>
+                    <h4>responsive</h4>
+                </div>
 
-                <h4>html5</h4>
-            </div>
-            <div class="skill">
-                <i class="fab fa-css3-alt"></i>
-
-                <h4>css3</h4>
-            </div>
-            <div class="skill">
-                <i class="fab fa-js"></i>
-
-                <h4>java script</h4>
-            </div>
-            <div class="skill">
-                <i></i>
-                <h4>jQuery</h4>
             </div>
         </div>
     </section>
+
+
     <section id="contact">
-        <h3> Kontakt</h3>
-        <p> gmiasek@gmail.com <br> tel.kom. 505 491 327</p>
-        <form action="" method="post">
-            <input id="name" type="text" placeholder="Jan Kowalski">
-            <input id="mail" type="email" placeholder="jan.kowalski@scoobydoo.com">
-            <textarea name="" id="message" placeholder=" Możesz tu wpisać wiadomość do mnie."></textarea>
-        </form>
+        <div class="inner-section">
+            <h3> Kontakt</h3>
+            <p> gmiasek@gmail.com <br> tel.kom. 505 491 327</p>
+            <form action="https://formspree.io/gmiasek@gmail.com" method="post">
+                <input id="name" type="text" placeholder="  Jan Kowalski">
+                <input id="mail" type="email" placeholder="  jan.kowalski@scoobydoo.com">
+                <textarea name="" id="message" placeholder=" Możesz tu wpisać wiadomość do mnie."></textarea>
+                <input id="apply" type="submit" value="wyślij">
+            </form>
+        </div>
     </section>
     <footer></footer>
     <script src="js/main.js"></script>

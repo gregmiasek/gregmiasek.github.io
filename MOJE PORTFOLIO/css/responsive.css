@@ -16,6 +16,54 @@
         display: block;
 
     }
-    
-    #moi {margin-right: 15px;}
+
+    #moi {
+        margin-right: 15px;
+    }
+
+    #right {
+        right: 658px;
+        top: 100px;
+    }
+
+    #left {
+        top: 340px;
+    }
+
+    .skill {
+        width: 45%;
+    }
+
+}
+
+
+@media (max-width: 639px) {
+    .inner-section {
+        width: 450px;
+    }
+
+}
+
+@media (min-width: 640px) {
+    .inner-section {
+        width: 600px;
+    }
+
+}
+
+
+@media (min-width: 720px) {
+
+    .inner-section {
+        width: 710px;
+    }
+}
+
+
+@media (min-width: 1270px) {
+    .inner-section {
+        width: 1100px;
+    }
+}
+
 }
