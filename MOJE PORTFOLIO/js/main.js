@@ -2,11 +2,21 @@
 
 var navListItem = document.getElementsByClassName('navli');
 var beep = document.getElementById('beep');
+var woosh = document.getElementById('woosh');
 var muteIc = document.getElementById('volume-icon');
 var amient = document.getElementById('ambient');
 var tune = document.getElementById('tune');
 var innerSection = document.getElementsByClassName('inner-section');
 console.log(innerSection);
+
+var skillIc = document.getElementsByClassName('skill');
+
+for (var i = 0; i < skillIc.length; i++) {
+    skillIc[i].addEventListener('mouseenter', function () {
+        woosh.play();
+    });
+}
+
 
 for (var i = 0; i < navListItem.length; i++) {
     navListItem[i].addEventListener('mouseenter', function () {
@@ -39,23 +49,43 @@ var sliderBar = document.getElementById('slider-bar');
 var sliderList = document.getElementsByClassName('slider-content');
 console.log(sliderList);
 var sliderCount = sliderList.length;
-var sliderSpan = sliderCount * 700;
-sliderBar.style.width = sliderSpan + 'px';
+var sliderSpan = sliderCount * innerWidth;
 var sliderIcons = document.getElementsByClassName('icon');
-console.log(sliderIcons);
+var innerWidth = innerSection[1].clientWidth;
+var clickCount = [];
+
+console.log(sliderSpan + ' sliderspan');
+
+for (var i = 0; i < sliderCount; i++) {
+    sliderList[i].style.width = innerWidth + 'px';
+}
+
+
+window.addEventListener('resize', function () {
+    console.log("resize");
+    var innerWidth = innerSection[1].clientWidth;
+    for (var i = 0; i < sliderCount; i++) {
+        sliderList[i].style.width = innerWidth + 'px';
+    }
+
+    sliderBar.style.left = -innerWidth * clickCount.length + 'px';
+});
 
 
 slideRigth.addEventListener('click', function () {
     console.log('prawo');
-
-    var innerWidth = innerSection[1].clientWidth;
     console.log(innerWidth);
+    console.log(clickCount);
+    var innerWidth = innerSection[1].clientWidth;
     var sliderPositon = sliderBar.offsetLeft;
+    var sliderSpan = sliderCount * innerWidth;
 
-    if (sliderPositon != -sliderSpan + 700)
+
+    if (sliderPositon != -sliderSpan + innerWidth)
 
     {
-        sliderBar.style.left = sliderPositon - 700 + 'px';
+        clickCount.push(1)
+        sliderBar.style.left = -innerWidth * clickCount.length + 'px';
         sliderIcons[1].classList.add('fa-chevron-right');
         sliderIcons[0].classList.add('fa-chevron-left');
         sliderIcons[0].classList.remove('fa-times');
@@ -72,12 +102,20 @@ slideRigth.addEventListener('click', function () {
 
 slideLeft.addEventListener('click', function () {
     console.log('lewo');
+
+
+    console.log(clickCount);
+    var innerWidth = innerSection[1].clientWidth;
+
+    var sliderSpan = sliderCount * innerWidth;
     var sliderPositon = sliderBar.offsetLeft;
+
 
     if (sliderPositon !== 0)
 
     {
-        sliderBar.style.left = sliderPositon + 700 + 'px';
+        clickCount.pop();
+        sliderBar.style.left = -innerWidth * clickCount.length + 'px';
         sliderIcons[0].classList.add('fa-chevron-left');
         sliderIcons[1].classList.add('fa-chevron-right');
         sliderIcons[0].classList.remove('fa-times');

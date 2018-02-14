@@ -5,7 +5,6 @@ body {
     background-color: #111;
     color: #fff;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 nav {
@@ -28,7 +27,7 @@ nav ul li {
     width: 130px;
     display: inline-block;
     text-align: center;
-    transition: all .2s linear;
+    transition: all .3s linear;
 
 }
 
@@ -123,14 +122,14 @@ h3 {
 
 h4 {
     margin-top: 15px;
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 
 #about > p {
     display: inline-block;
     text-align: justify;
-    width: 700px;
+    width: 100%;
     font-size: 2em;
 }
 
@@ -139,19 +138,19 @@ h4 {
 }
 
 #slider {
-    width: 700px;
+    width: 100%;
     height: 480px;
     position: relative;
-    overflow: hidden;
     border: 2px solid #13d4cd;
     display: inline-block;
+    overflow: hidden;
 }
 
 
 #slider-bar {
     height: 480px;
     position: absolute;
-    transition: all linear 0.1s;
+    transition: all ease 0.3s;
 }
 
 .slider-btn {
@@ -178,14 +177,14 @@ h4 {
 
 
 .slider-content {
-    width: 700px;
     height: 480px;
     background-position: center;
     background-size: cover;
     float: left;
     text-align: center;
     line-height: 480px;
-    font-size: 2em;
+    font-size: 3em;
+    color: #13d4cd;
 }
 
 #pic-1 {
@@ -197,11 +196,15 @@ h4 {
 }
 
 #pic-3 {
-    background-image: url(../img/polityka.png);
+    background-image: url(../img/Sejm.jpeg);
 }
 
 #pic-4 {
-    background-image: url(../img/normandysr2b.jpg);
+    background-image: url(../img/komiksy.jpg);
+}
+
+#pic-5 {
+    background-image: url(../img/the%20sword.JPG);
 }
 
 
