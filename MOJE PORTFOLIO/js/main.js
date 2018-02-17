@@ -53,9 +53,6 @@ var sliderSpan = sliderCount * innerWidth;
 var sliderIcons = document.getElementsByClassName('icon');
 var innerWidth = innerSection[1].clientWidth;
 var clickCount = [];
-sliderBar.style.width = 100 * sliderList.length + '%';
-var slideCount = document.getElementById('slideCount');
-slideCount.innerHTML = '1/' + sliderList.length;
 
 console.log(sliderSpan + ' sliderspan');
 
@@ -84,8 +81,6 @@ slideRigth.addEventListener('click', function () {
     var sliderSpan = sliderCount * innerWidth;
 
 
-
-
     if (sliderPositon != -sliderSpan + innerWidth)
 
     {
@@ -96,7 +91,6 @@ slideRigth.addEventListener('click', function () {
         sliderIcons[0].classList.remove('fa-times');
         sliderIcons[1].classList.remove('fa-times');
         slideSnd.play();
-        slideCount.innerHTML = clickCount.length + 1 + '/' + sliderList.length;
 
     } else {
         sliderIcons[1].classList.remove('fa-chevron-right');
@@ -127,7 +121,6 @@ slideLeft.addEventListener('click', function () {
         sliderIcons[0].classList.remove('fa-times');
         sliderIcons[1].classList.remove('fa-times');
         slideSnd.play();
-        slideCount.innerHTML = clickCount.length + 1 + '/' + sliderList.length;
     } else {
         sliderIcons[0].classList.remove('fa-chevron-left');
         sliderIcons[0].classList.add('fa-times');
