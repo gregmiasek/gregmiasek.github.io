@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>mapy google</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mapa">
+        <h3>JESTEŚMY W SZKOLE</h3>
+        <div id="map"></div>
+        <button id="nawiguj">nawiguj</button>
+    </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzDApll7qn_tu8mkXrb7fbX9U7lWOvjm8&callback=initMap">
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
