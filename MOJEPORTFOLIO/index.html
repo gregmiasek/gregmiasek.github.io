@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GREG MIĄSEK</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href='css/fontawesome-all.css'>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+</head>
+
+<body>
+    <audio id="slide-sound" src="audio/slider.wav"></audio>
+    <audio id="tune" src="audio/20440__agfx__beep-pager.wav"></audio>
+    <audio id="beep" src="audio/bip.wav"></audio>
+    <audio id="woosh" src="audio/263133__pan14__tone-beep.wav"></audio>
+    <audio id="ambient" src="audio/211683__diboz__control-room.wav" autoplay loop></audio>
+    <a id="volume" href="">
+       <i id="volume-icon" class="fas fa-volume-up"></i>
+       </a>
+    <nav>
+        <ul>
+            <li class="navli">
+                <div class="navdiv">
+                    <a class="navlink" href="#about">o mnie</a>
+                </div>
+            </li>
+            <li class="navli">
+                <div class="navdiv">
+                    <a class="navlink" href="#skills">umiejętności</a>
+                </div>
+            </li>
+            <li class="navli">
+                <div class="navdiv">
+                    <a class="navlink" href="#contact">kontakt</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div id="moi"></div>
+        <div class="inner-section">
+            <h1>Grzegorz Miąsek</h1>
+            <h2>front-end developer</h2>
+        </div>
+    </header>
+    <section id="skills">
+        <div class="inner-section">
+            <h3>umiejętności</h3>
+            <div id="skill-icons">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <h4>html5</h4>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <h4>css3</h4>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js"></i>
+                    <h4>javascript</h4>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-desktop"></i>
+                    <h4>RWD</h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id=about>
+        <div class="inner-section">
+            <h3>o mnie</h3>
+            <p>Jako osoba z doświadczeniem w DTP, zaczynam moją przygodę z web designem. Front-end stanowi naturalnym rozwinięcie tego, co robiłem dotychczas w analogowym świecie. Jest zarazem kompletnie nowym obszarem, którego eksploarcja przynosi mi radość. Podobnie jak poniższe:</p>
+            <div id="slider">
+                <div id="slideCount"></div>
+                <div class="slider-btn" id="left"><i class="fas fa-chevron-left icon"></i>
+                </div>
+                <div class="slider-btn" id="right"><i class="fas fa-chevron-right icon"></i>
+                </div>
+
+                <div id="slider-bar" style="left: 0px">
+                    <div class="slider-content" id="pic-1">Science Fiction</div>
+                    <div class="slider-content" id="pic-2">Gry Video</div>
+                    <div class="slider-content" id="pic-3">Polityka</div>
+                    <div class="slider-content" id="pic-4">Komiks</div>
+                    <div class="slider-content" id="pic-5">Muzyka Rockowa</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="inner-section">
+            <h3> Kontakt</h3>
+            <p> gmiasek@gmail.com <br> tel.kom. 505 491 327</p>
+            <p>Możesz też skontaktować się ze mną za pomocą poniższego formularza.</p>
+            <form action="https://formspree.io/gmiasek@gmail.com" method="post">
+                <input name="imie" id="name" type="text" placeholder=" Twoje imię, nazwisko, lub nazwa firmy">
+                <input name="mail" id="mail" type="email" placeholder="  twój adres email">
+                <textarea name="info" id="message" placeholder=" Treść wiadomości"></textarea>
+                <input id="apply" type="submit" value="wyślij">
+            </form>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
