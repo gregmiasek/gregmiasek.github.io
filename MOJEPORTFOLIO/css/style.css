@@ -151,7 +151,7 @@ h4 {
 #slider-bar {
     height: 480px;
     position: absolute;
-    transition: all ease 0.3s;
+    transition: all ease 0.5s;
 }
 
 .slider-btn {
