@@ -11,6 +11,21 @@ console.log(innerSection);
 
 var skillIc = document.getElementsByClassName('skill');
 
+var navLinks = document.getElementsByClassName('navlink');
+console.log(navLinks);
+
+for (var i = 0; i < navLinks.length; i++) {
+
+    navLinks[i].addEventListener('click', function (event) {
+        event.preventDefault();
+        var aim = this.getAttribute('href');
+        document.querySelector(aim).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+}
+
+
 for (var i = 0; i < skillIc.length; i++) {
     skillIc[i].addEventListener('mouseenter', function () {
         woosh.play();

@@ -1,0 +1,32 @@
+div {
+    width: 600px;
+    height: 400px;
+    animation-name: backchange;
+    animation-duration: 20s;
+    background-position: center;
+    background-size: 600px 400px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes backchange {
+    0% {
+        background-image: url(../img/komiksy.jpg);
+    }
+    20% {
+        background-image: url(../img/polityka.jpg);
+    }
+    40% {
+        background-image: url(../img/sci-fi.jpg);
+    }
+    60% {
+        background-image: url(../img/Sejm.jpeg);
+    }
+    80% {
+        background-image: url(../img/the%20sword.JPG);
+    }
+    100% {
+        background-image: url(../img/komiksy.jpg);
+    }
+
+}
