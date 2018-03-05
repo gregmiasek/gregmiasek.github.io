@@ -11,6 +11,21 @@ console.log(innerSection);
 
 var skillIc = document.getElementsByClassName('skill');
 
+var navLinks = document.getElementsByClassName('navlink');
+console.log(navLinks);
+
+for (var i = 0; i < navLinks.length; i++) {
+
+    navLinks[i].addEventListener('click', function (event) {
+        event.preventDefault();
+        var aim = this.getAttribute('href');
+        document.querySelector(aim).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+}
+
+
 for (var i = 0; i < skillIc.length; i++) {
     skillIc[i].addEventListener('mouseenter', function () {
         woosh.play();
@@ -74,21 +89,18 @@ window.addEventListener('resize', function () {
     sliderBar.style.left = -innerWidth * clickCount.length + 'px';
 });
 
+var clickDisabled = false;
 
 slideRigth.addEventListener('click', function () {
+    if (clickDisabled)
+        return;
     console.log('prawo');
     console.log(innerWidth);
     console.log(clickCount);
     var innerWidth = innerSection[1].clientWidth;
     var sliderPositon = sliderBar.offsetLeft;
     var sliderSpan = sliderCount * innerWidth;
-
-
-
-
-    if (sliderPositon != -sliderSpan + innerWidth)
-
-    {
+    if (sliderPositon != -sliderSpan + innerWidth) {
         clickCount.push(1)
         sliderBar.style.left = -innerWidth * clickCount.length + 'px';
         sliderIcons[1].classList.add('fa-chevron-right');
@@ -97,29 +109,29 @@ slideRigth.addEventListener('click', function () {
         sliderIcons[1].classList.remove('fa-times');
         slideSnd.play();
         slideCount.innerHTML = clickCount.length + 1 + '/' + sliderList.length;
-
     } else {
         sliderIcons[1].classList.remove('fa-chevron-right');
         sliderIcons[1].classList.add('fa-times');
     };
     console.log(sliderPositon);
 
+    clickDisabled = true;
+    setTimeout(function () {
+        clickDisabled = false;
+    }, 500);
 });
 
+
+
 slideLeft.addEventListener('click', function () {
+    if (clickDisabled)
+        return;
     console.log('lewo');
-
-
     console.log(clickCount);
     var innerWidth = innerSection[1].clientWidth;
-
     var sliderSpan = sliderCount * innerWidth;
     var sliderPositon = sliderBar.offsetLeft;
-
-
-    if (sliderPositon !== 0)
-
-    {
+    if (sliderPositon !== 0) {
         clickCount.pop();
         sliderBar.style.left = -innerWidth * clickCount.length + 'px';
         sliderIcons[0].classList.add('fa-chevron-left');
@@ -133,5 +145,10 @@ slideLeft.addEventListener('click', function () {
         sliderIcons[0].classList.add('fa-times');
     };
     console.log(sliderPositon);
+
+    clickDisabled = true;
+    setTimeout(function () {
+        clickDisabled = false;
+    }, 500);
 
 });

@@ -1,0 +1,24 @@
+@media (max-width: 1360px) {
+
+    header {
+        background-size: 150% 100%;
+    }
+    #about,
+    #contact {
+        width: 100%;
+    }
+
+}
+
+
+
+@media (max-width: 576px) {
+
+    header {
+        background-size: 200% 100%;
+    }
+
+    section {
+        width: 100%;
+    }
+}

@@ -1,0 +1,259 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    text-align: center;
+    color: red;
+    font-size: 1.5em;
+    overflow-x: hidden;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: lightgray;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    position: fixed;
+    z-index: 10;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.background-preloader {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    animation-name: backimage;
+    animation-iteration-count: 1;
+    animation-duration: 0.1s;
+}
+
+header {
+    width: 100%;
+    height: 49vh;
+    background-position: center;
+    background-size: 100% 200%;
+    animation-name: backimage;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes backimage {
+    0% {
+        background-image: url(../img/rocknroll.png);
+    }
+    25% {
+        background-image: url(../img/scifi_bw.png);
+    }
+    50% {
+        background-image: url(../img/videogames.png);
+    }
+    75% {
+        background-image: url(../img/comics.png);
+    }
+    100% {
+        background-image: url(../img/rocknroll.png);
+    }
+
+}
+
+section {
+    width: 50%;
+    transition: all 0.5s linear;
+    background-color: lightgray;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 60px;
+    transform-origin: center;
+}
+
+h1,
+h2 {
+    text-transform: capitalize;
+}
+
+h3 {
+    margin-top: 60px;
+    text-transform: uppercase;
+}
+
+
+section:hover {
+    background-color: darkgray;
+}
+
+.section-inner {
+    width: 85%;
+    height: 90%;
+    display: inline-block;
+}
+
+.preveiwer {
+    position: absolute;
+    width: 95%;
+    left: 0;
+    right: 0;
+    top: 60vh;
+    margin: auto;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+    animation-name: growth;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+#close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 15;
+    margin: 10px;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+#close:hover {
+    background-color: gray;
+    border-radius: 50%;
+    box-shadow: 10px 10px rgba(0.0.0.0.7);
+}
+
+@keyframes growth {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale (1);
+    }
+}
+
+
+.vanished {
+    animation-name: shrink;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+@keyframes shrink {
+    0% {
+        transform: scale(1);
+    }
+    99% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+.appear {
+    animation-name: enlarge;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+@keyframes enlarge {
+    0% {
+        transform: scale(0);
+    }
+    1% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+#about {
+    /*background-color: gray;*/
+}
+
+
+#social-media {
+    width: 100%;
+    height: 20%;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 20px;
+}
+
+.social-link > i {
+    height: 20%;
+    color: black;
+    font-size: 2em;
+}
+
+
+#portfolio {
+    /*background-color: white;*/
+}
+
+#skills {
+    /*background-color: white;*/
+}
+
+
+#contact {
+    /*background-color: gray;*/
+}
+
+#me {
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/GregMiasek%202.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.skill {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin: 20px;
+}
+
+i {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: aqua;
+    color: red;
+    line-height: 60px;
+}
+
+h4 {
+    margin: 5px;
+}
+
+footer {
+    width: 100%;
+    color: white;
+    background-color: red;
+    order: 4;
+}
