@@ -4,28 +4,41 @@ body {
     flex-wrap: wrap;
     margin: 0;
     text-align: center;
-    color: red;
+    color: rgb(255, 255, 255);
     font-size: 1.5em;
     overflow-x: hidden;
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-color: lightgray;
+    background-color: #61626c;
     font-family: 'Roboto', sans-serif;
 }
 
 nav {
     position: fixed;
     z-index: 10;
+    right: 10px;
+    top: 10px;
 }
 
 li {
     list-style-type: none;
+    display: inline;
+    background-color: #45464e;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.7);
 }
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #3fcbff;
+}
+
+nav > ul > li:hover {
+    background-color: #6c6e7c;
 }
 
 .background-preloader {
@@ -38,13 +51,15 @@ a {
 }
 
 header {
+    z-index: 2;
     width: 100%;
-    height: 49vh;
+    height: 55vh;
     background-position: center;
     background-size: 100% 200%;
     animation-name: backimage;
-    animation-duration: 20s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
+    padding-top: 40px;
 }
 
 
@@ -52,44 +67,95 @@ header {
     0% {
         background-image: url(../img/rocknroll.png);
     }
-    25% {
+    33% {
         background-image: url(../img/scifi_bw.png);
     }
-    50% {
+    66% {
         background-image: url(../img/videogames.png);
     }
-    75% {
-        background-image: url(../img/comics.png);
-    }
+
     100% {
         background-image: url(../img/rocknroll.png);
     }
 
 }
 
-section {
+
+
+
+#me {
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/GregMiasek%202.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    display: inline-block;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+#headlines {
     width: 50%;
-    transition: all 0.5s linear;
-    background-color: lightgray;
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 60px;
-    transform-origin: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #45464e;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
 }
 
 h1,
 h2 {
     text-transform: capitalize;
+    font-weight: 800;
+    color: #3fcbff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
 }
 
 h3 {
-    margin-top: 60px;
     text-transform: uppercase;
+    text-decoration: underline;
+    line-height: 10px;
+}
+
+
+section {
+    width: 49.6%;
+    transition: all 0.5s linear;
+    background-color: #45464e;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 60px;
+    transform-origin: center;
+    font-weight: 500;
+    border-radius: 20px;
+    margin: 2px 0.125%;
+    box-sizing: border-box;
 }
 
 
 section:hover {
-    background-color: darkgray;
+    background-color: #30333c;
+    z-index: 10;
 }
 
 .section-inner {
@@ -101,18 +167,23 @@ section:hover {
 .preveiwer {
     position: absolute;
     width: 95%;
+    height: 80%;
     left: 0;
     right: 0;
-    top: 60vh;
+    top: 70%;
+    padding: 40px;
     margin: auto;
-    background-color: white;
-    border: 2px solid black;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+    background-color: #45464e;
+    border: 4px solid #61626c;
+    border-radius: 20px;
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.5);
     animation-name: growth;
     animation-duration: 2s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-fill-mode: both;
+    box-sizing: border-box;
+    z-index: 20;
 }
 
 #close {
@@ -131,7 +202,7 @@ section:hover {
 #close:hover {
     background-color: gray;
     border-radius: 50%;
-    box-shadow: 10px 10px rgba(0.0.0.0.7);
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.7);
 }
 
 @keyframes growth {
@@ -139,7 +210,7 @@ section:hover {
         transform: scale(0);
     }
     100% {
-        transform: scale (1);
+        transform: scale(1);
     }
 }
 
@@ -185,11 +256,6 @@ section:hover {
 
 }
 
-#about {
-    /*background-color: gray;*/
-}
-
-
 #social-media {
     width: 100%;
     height: 20%;
@@ -207,28 +273,6 @@ section:hover {
 }
 
 
-#portfolio {
-    /*background-color: white;*/
-}
-
-#skills {
-    /*background-color: white;*/
-}
-
-
-#contact {
-    /*background-color: gray;*/
-}
-
-#me {
-    width: 200px;
-    height: 200px;
-    background-image: url(../img/GregMiasek%202.png);
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    display: inline-block;
-}
 
 .skill {
     display: inline-block;
@@ -237,23 +281,51 @@ section:hover {
     margin: 20px;
 }
 
+
 i {
-    font-size: 2rem;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: aqua;
-    color: red;
-    line-height: 60px;
+    font-size: 3rem;
+    color: #3fcbff;
+
 }
 
 h4 {
     margin: 5px;
 }
 
+input,
+textarea {
+    border: none;
+    background-color: #797a84;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: white;
+    margin-top: 20px;
+    width: 70%;
+
+}
+
+input {
+    height: 40px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: lightblue;
+}
+
 footer {
     width: 100%;
-    color: white;
-    background-color: red;
+    height: 70px;
+    line-height: 70px;
+    color: #3fcbff;
+    background-color: #000000;
+    order: 4;
     order: 4;
 }

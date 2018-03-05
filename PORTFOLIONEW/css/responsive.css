@@ -5,7 +5,12 @@
     }
     #about,
     #contact {
-        width: 100%;
+        width: 99.8%;
+    }
+
+    #headlines {
+        width: 80%;
+
     }
 
 }
@@ -14,11 +19,31 @@
 
 @media (max-width: 576px) {
 
+    body {
+        font-size: 1em;
+    }
+
     header {
         background-size: 200% 100%;
     }
 
-    section {
+    #headlines {
         width: 100%;
+
+    }
+
+    section {
+        width: 99.8%;
+    }
+
+    h1,
+    h2 {
+        font-size: 1em;
+    }
+
+    #me {
+        margin-top: 120px;
+        width: 120px;
+        height: 120px;
     }
 }
