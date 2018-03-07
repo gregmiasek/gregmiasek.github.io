@@ -19,8 +19,19 @@
 
 @media (max-width: 576px) {
 
+
     body {
         font-size: 1em;
+    }
+
+    nav {
+        left: -30px;
+        right: auto;
+    
+    }
+
+    li {
+        display: block;
     }
 
     header {
