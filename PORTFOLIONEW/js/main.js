@@ -58,8 +58,16 @@ function previewLink() {
             $('section').addClass('appear');
             $(framer).addClass('vanished');
 
+            for (var i = 0; i < links.length; i++) {
+                links[i].removeEventListener('click', previewLink);
+            }
+
             setTimeout(function () {
                 $(framer).remove();
+
+                for (var i = 0; i < links.length; i++) {
+                    links[i].addEventListener('click', previewLink);
+                }
             }, 2000);
         });
     } else {
@@ -85,10 +93,18 @@ function previewLink() {
                 $(framer).removeClass('appear');
                 $(framer).addClass('vanished');
 
+                for (var i = 0; i < links.length; i++) {
+                    links[i].removeEventListener('click', previewLink);
+                }
+
                 setTimeout(function () {
                     $(framer).remove();
                     for (var i = 0; i < sections.length; i++) {
                         sections[i].addEventListener('click', preview);
+                    }
+
+                    for (var i = 0; i < links.length; i++) {
+                        links[i].addEventListener('click', previewLink);
                     }
                 }, 2000);
             });
@@ -127,10 +143,18 @@ function preview() {
         $('section').addClass('appear');
         $(framer).addClass('vanished');
 
+        for (var i = 0; i < links.length; i++) {
+            links[i].removeEventListener('click', previewLink);
+        }
+
         setTimeout(function () {
             $(framer).remove();
             for (var i = 0; i < sections.length; i++) {
                 sections[i].addEventListener('click', preview);
+            }
+
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener('click', previewLink);
             }
         }, 2000);
 
