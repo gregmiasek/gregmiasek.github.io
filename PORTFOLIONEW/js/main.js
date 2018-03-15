@@ -6,6 +6,15 @@ $(document).ready();
 var sections = document.getElementsByTagName('section');
 console.log(sections);
 
+
+
+$(window).resize(function previewerPosition() {
+    var headerHeigth = $('header').height();
+    console.log(headerHeigth);
+    $('.preveiwer').css('top', headerHeigth + 30 + 'px');
+});
+
+
 var links = $('nav>ul>li>a');
 
 $('nav>ul>li>a').mouseenter(function (event) {
@@ -30,10 +39,12 @@ for (var i = 0; i < links.length; i++) {
 
 function previewLink() {
 
+
     if ($('section').hasClass('appear')) {
         for (var i = 0; i < links.length; i++) {
             links[i].removeEventListener('click', previewLink);
         }
+
 
         $(framer).remove();
         var ident = $('a').index(this);
@@ -122,7 +133,6 @@ function preview() {
     for (var i = 0; i < sections.length; i++) {
         sections[i].removeEventListener('click', preview);
     }
-
 
     $(framer).remove();
     var ident = $('section').index(this);

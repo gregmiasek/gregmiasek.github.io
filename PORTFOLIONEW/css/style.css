@@ -12,6 +12,8 @@ body {
     background-repeat: no-repeat;
     background-color: #61626c;
     font-family: 'Roboto', sans-serif;
+    height: auto;
+    transition: all 2s linear;
 }
 
 nav {
@@ -60,7 +62,6 @@ header {
     animation-name: backimage;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    padding-top: 40px;
 }
 
 
@@ -92,10 +93,10 @@ header {
     background-position: center;
     border-radius: 50%;
     display: inline-block;
-    top: 20px;
     left: 0;
     right: 0;
     margin: auto;
+    margin-top: 60px;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.7);
     z-index: 10;
 }
@@ -103,6 +104,7 @@ header {
 #headlines {
     width: 50%;
     margin: auto;
+    margin-bottom: 60px;
     background-color: #45464e;
     border-radius: 10px;
     display: block;
@@ -114,7 +116,7 @@ h1,
 h2 {
     text-transform: capitalize;
     font-weight: 800;
-    color: #3fcbff;
+    color: rgb(63, 203, 255);
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -142,7 +144,6 @@ section {
     background-color: #45464e;
     position: relative;
     overflow: hidden;
-    padding-bottom: 60px;
     transform-origin: center;
     font-weight: 500;
     border-radius: 20px;
@@ -151,7 +152,9 @@ section {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    padding-bottom: 60px;
+
 }
 
 
@@ -171,12 +174,12 @@ section:hover {
 }
 
 .preveiwer {
-    position: absolute;
     width: 95%;
     left: 0;
     right: 0;
-    top: 70%;
     padding: 40px;
+    position: absolute;
+    top: 70%;
     margin: auto;
     background-color: #45464e;
     border: 4px solid #61626c;
@@ -225,6 +228,7 @@ section:hover {
 
 
 .vanished {
+    padding-bottom: 1px;
     animation-name: shrink;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -236,11 +240,10 @@ section:hover {
     0% {
         transform: scale(1);
     }
-    99% {
-        transform: scale(0);
-    }
+
     100% {
         transform: scale(0);
+
     }
 }
 
@@ -254,9 +257,6 @@ section:hover {
 
 @keyframes enlarge {
     0% {
-        transform: scale(0);
-    }
-    1% {
         transform: scale(0);
     }
     100% {
@@ -309,6 +309,64 @@ h4 {
     margin: 5px;
 }
 
+.project {
+    display: inline-block;
+    width: 35%;
+    height: 280px;
+    position: relative;
+    margin: 20px;
+}
+
+.project > a {
+    width: 100%;
+    height: 100%;
+    background-position: top;
+    background-size: cover;
+    display: inline-block;
+    border-radius: 10px;
+
+}
+
+.project > a:hover::before {
+    color: white;
+    font-weight: 700;
+    font-size: 2em;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 280px;
+    content: '+';
+    animation-name: befbackcolor;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    border-radius: 10px;
+
+}
+
+@keyframes befbackcolor {
+    0% {
+        background-color: rgba(63, 203, 255, 0.0);
+    }
+    100% {
+        background-color: rgba(63, 203, 255, 0.7);
+    }
+}
+
+
+
+#calc > a {
+    background-image: url(../img/kalkualtor.png);
+}
+
+
+#oldporf > a {
+    background-image: url(../img/crazy.png);
+}
+
 input,
 textarea {
     border: none;
@@ -318,6 +376,7 @@ textarea {
     color: white;
     margin-top: 20px;
     width: 70%;
+    border-radius: 10px;
 
 }
 
@@ -328,6 +387,16 @@ input {
 textarea {
     height: 150px;
     resize: vertical;
+    border-radius: 10px;
+}
+
+input[type='submit'] {
+    width: 30%;
+    transition: all 0.3s;
+}
+
+input[type='submit']:hover {
+    background-color: rgba(63, 203, 255, 0.8);
 }
 
 ::placeholder {
