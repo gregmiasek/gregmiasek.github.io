@@ -8,9 +8,11 @@ console.log(sections);
 
 
 
+
 $(window).resize(function previewerPosition() {
-    var headerHeigth = $('header').height();
     console.log(headerHeigth);
+    var headerHeigth = $('header').height();
+
     $('.preveiwer').css('top', headerHeigth + 30 + 'px');
 });
 
@@ -50,14 +52,19 @@ function previewLink() {
         var ident = $('a').index(this);
         console.log(ident);
         $('section').removeClass('appear');
+        $('footer').removeClass('appear');
         $('section').addClass('vanished');
+        $('footer').addClass('vanished');
         $('#larger').remove;
         $('body').append('<div class="preveiwer" id="larger"></div>');
+        var headerHeigth = $('header').height();
+
+        $('.preveiwer').css('top', headerHeigth + 30 + 'px');
         var framer = document.getElementById('larger');
         framer.innerHTML = sections[ident].innerHTML;
-        document.querySelector('#larger').scrollIntoView({
-            behavior: 'smooth'
-        });
+        $('html,body').animate({
+            scrollTop: headerHeigth - 100
+        }, 3000);
         $(framer).append('<i id="close" class="fas fa-times"></i>');
 
         for (var i = 0; i < links.length; i++) {
@@ -66,7 +73,9 @@ function previewLink() {
 
         $('#close').click(function () {
             $('section').removeClass('vanished');
+            $('footer').removeClass('vanished');
             $('section').addClass('appear');
+            $('footer').addClass('appear');
             $(framer).addClass('vanished');
 
             for (var i = 0; i < links.length; i++) {
@@ -91,19 +100,18 @@ function previewLink() {
 
         setTimeout(function () {
             framer.innerHTML = sections[ident].innerHTML;
-            document.querySelector('#larger').scrollIntoView({
-                behavior: 'smooth'
-            });
             $(framer).removeClass('transparent');
             $(framer).append('<i id="close" class="fas fa-times"></i>');
             $(framer).addClass('visible');
 
             $('#close').click(function () {
                 $('section').removeClass('vanished');
+                $('footer').removeClass('vanished');
                 $('section').addClass('appear');
+                $('footer').addClass('appear');
                 $(framer).removeClass('appear');
                 $(framer).addClass('vanished');
-
+           
                 for (var i = 0; i < links.length; i++) {
                     links[i].removeEventListener('click', previewLink);
                 }
@@ -138,19 +146,27 @@ function preview() {
     var ident = $('section').index(this);
     console.log(ident);
     $('section').removeClass('appear');
+    $('footer').removeClass('appear');
     $('section').addClass('vanished');
+    $('footer').addClass('vanished');
     $('#larger').remove;
     $('body').append('<div class="preveiwer" id="larger"></div>');
+    var headerHeigth = $('header').height();
+
+    $('.preveiwer').css('top', headerHeigth + 30 + 'px');
     var framer = document.getElementById('larger');
     framer.innerHTML = sections[ident].innerHTML;
-    document.querySelector('#larger').scrollIntoView({
-        behavior: 'smooth'
-    });
+    $('html,body').animate({
+        scrollTop: headerHeigth - 100
+    }, 3000);
+
     $(framer).append('<i id="close" class="fas fa-times"></i>');
 
     $('#close').click(function () {
         $('section').removeClass('vanished');
+        $('footer').removeClass('vanished');
         $('section').addClass('appear');
+        $('footer').addClass('appear');
         $(framer).addClass('vanished');
 
         for (var i = 0; i < links.length; i++) {

@@ -174,17 +174,17 @@ section:hover {
 }
 
 .preveiwer {
-    width: 95%;
+    width: 98%;
     left: 0;
     right: 0;
-    padding: 40px;
+    padding-top: 40px;
     position: absolute;
-    top: 70%;
     margin: auto;
     background-color: #45464e;
     border: 4px solid #61626c;
     border-radius: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     box-shadow: 20px 20px rgba(0, 0, 0, 0.5);
@@ -197,6 +197,13 @@ section:hover {
     z-index: 20;
     transition: all 2s;
 }
+
+.preveiwer::after {
+    content: "all rights reserved by Grzegorz Miąsek";
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
 
 #close {
     position: absolute;
@@ -406,7 +413,7 @@ input[type='submit']:hover {
     color: lightblue;
 }
 
-footer {
+footer, .preveiwer::after {
     width: 100%;
     height: 70px;
     line-height: 70px;
